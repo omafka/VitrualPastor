@@ -21,7 +21,7 @@ def test_ask():
         "/ask",
         json={"id_session": "id0987654321",
               "text": "I want to get to know bible more. What should I do?",
-              "number_template": "10"},
+              "number_template": "1"},
     )
     assert response.status_code == 200
     assert "response" in response.json()
